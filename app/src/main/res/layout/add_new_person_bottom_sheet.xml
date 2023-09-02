@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="?attr/background_color">
+
+    <TextView
+        android:id="@+id/topTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите имя человека"
+        android:textSize="20sp"
+        android:textColor="?attr/text_color"
+        app:layout_constraintBottom_toTopOf="@id/personNameET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/personNameET"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="10dp"
+        android:hint="Введите имя человека"
+        app:layout_constraintBottom_toTopOf="@id/addPersonBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topTextTV" />
+
+    <Button
+        android:id="@+id/addPersonBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:text="Добавить"
+        android:textColor="?attr/button_text_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personNameET" />
+</androidx.constraintlayout.widget.ConstraintLayout>
